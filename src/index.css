@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #050505;
+  color: #e2e8f0;
+  overflow: hidden;
+}
+
+/* Custom slider styling for sci-fi look */
+input[type=range] {
+  -webkit-appearance: none;
+  @apply w-full h-2 bg-slate-800 rounded-full outline-none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @apply w-4 h-6 bg-cyan-400 rounded-sm cursor-pointer shadow-[0_0_10px_rgba(34,211,238,0.8)];
+  border: 1px solid theme('colors.cyan.200');
+}
+
+input[type=range]::-moz-range-thumb {
+  @apply w-4 h-6 bg-cyan-400 rounded-sm cursor-pointer shadow-[0_0_10px_rgba(34,211,238,0.8)];
+  border: 1px solid theme('colors.cyan.200');
+}

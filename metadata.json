@@ -1,0 +1,6 @@
+{
+  "name": "Quantum Accelerator RNG",
+  "description": "A badass simulation of a particle accelerator that collides particles to generate a random number from 1-10.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
